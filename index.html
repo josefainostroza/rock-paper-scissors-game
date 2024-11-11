@@ -4,17 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header></header>
-    <main>
-      <!-- <img
-          class="image1"
-          src="./assets/images/"
-          alt=""
-        /> -->
+    <header class="header">
+      <div class="square">
+        <span class="textScore">YOU</span>
+        <span class="number">0</span>
+      </div>
+      <div class="logo">
+        <span class="title">ROCK</span>
+        <span class="title">PAPER</span>
+        <span class="title">SCISSORS</span>
+      </div>
+      <div class="square2">
+        <span class="textScore2">PC</span>
+        <span class="number2">0</span>
+      </div>
+    </header>
+    <main class="paperScissorsRock">
+      <div class="centerTriangle">
+        <img class="bgTriangle" src="./assets/images/bg-triangle.svg" />
+      </div>
+      <div class="centerGame">
+        <div class="CenterRock">
+          <div class="scissorsRock">
+            <div class="circlePaper">
+              <img class="paper" src="./assets/images/icon-paper.svg" />
+            </div>
+
+            <div class="circleScissors">
+              <img class="scissors" src="./assets/images/icon-scissors.svg" />
+            </div>
+          </div>
+
+          <div class="circlerock">
+            <img class="rock" src="./assets/images/icon-rock.svg" />
+          </div>
+        </div>
+      </div>
+
+      <div id="button" class="button">
+        <button class="button">RULES</button>
+      </div>
     </main>
+    <div id="modal" class="modal">
+      <img class="imageRules" src="./assets/images/image-rules.svg" />
+    </div>
+
     <footer></footer>
     <script src="js/scripts.js"></script>
   </body>

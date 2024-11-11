@@ -20,7 +20,196 @@ ul {
   margin-bottom: 0px;
 }
 body {
+  height: 100vh;
   margin: 0;
-  font-family: sans-serif;
-  color: aliceblue;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-image: radial-gradient(#1f3757, #131537);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: rgb(255, 255, 255);
+  padding: 32px 32px 56px 32px;
 }
+.image {
+  width: 83px;
+  height: 48px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 96px;
+  border: 3px solid #565468;
+  border-radius: 5px;
+  padding: 23px;
+}
+.title {
+  font-weight: 700; /*grosor, peso de la fuente*/
+  font-size: 21px; /*tamaño de la fuente*/
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 16px; /*interlineado */
+}
+.square {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  height: 72px;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px 22px;
+}
+.textScore {
+  font-weight: 600; /*grosor, peso de la fuente*/
+  font-size: 10px; /*tamaño de la fuente*/
+  color: #2a45c2;
+}
+.number {
+  font-weight: 700; /*grosor, peso de la fuente*/
+  font-size: 40px; /*tamaño de la fuente*/
+  color: #565468;
+}
+.square2 {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  height: 72px;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px 22px;
+}
+.textScore2 {
+  font-weight: 600; /*grosor, peso de la fuente*/
+  font-size: 10px; /*tamaño de la fuente*/
+  color: #2a45c2;
+  /* line-height: 23px; interlineado */
+}
+.number2 {
+  font-weight: 700; /*grosor, peso de la fuente*/
+  font-size: 40px; /*tamaño de la fuente*/
+  color: #565468;
+  /* line-height: 23px; interlineado */
+}
+
+.circlePaper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 99px;
+  height: 99px;
+  background-image: radial-gradient(#f3f3f3, #dadada);
+  border-radius: 100%;
+  padding: 19px, 26px;
+  border: 10px solid #4664f4;
+}
+.paper {
+  position: absolute;
+  width: 34px;
+  height: 42px;
+}
+.circleScissors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 99px;
+  height: 99px;
+  background-image: radial-gradient(#f3f3f3, #dadada);
+  border-radius: 100%;
+  padding: 19px, 26px;
+  border: 10px solid #eb9f0e;
+}
+.scissors {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+}
+.circlerock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 99px;
+  height: 99px;
+  background-image: radial-gradient(#f3f3f3, #dadada);
+  border-radius: 100%;
+  padding: 19px, 26px;
+  border: 10px solid #db2e4d;
+}
+.rock {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+}
+.scissorsRock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 51px;
+}
+.bgTriangle {
+  width: 200px;
+  height: 180px;
+}
+.centerTriangle {
+  position: absolute;
+}
+.paperScissorsRock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.CenterRock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 105px;
+}
+.button {
+  width: 128px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 10px 37px;
+  margin-top: 100%;
+  font-weight: 600; /*grosor, peso de la fuente*/
+  font-size: 16px; /*tamaño de la fuente*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerGame {
+  display: flex;
+  justify-content: center;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0 0 0/0.85);
+  scale: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-show {
+  scale: 1;
+}
+.imageRules {
+  width: 305px;
+  height: 271px;
+}
+/* userChoice=EVENT.TARGET.DATASET.ICON;
+USERrESULTiCON.SRC =`.../ASSETS/IMAGES/ICON-${}.SVG` */
